@@ -5,38 +5,83 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container card style */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header button {
+  border: #ccc 1px solid;
+  margin-top: 10px;
 }
 
-.card {
-  padding: 2em;
+.body h3 {
+  margin-bottom: 30px;
 }
 
-.read-the-docs {
-  color: #888;
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 2px;
+  text-align: left;
+  font-size: 0.85em;
+}
+.form-field input, .form-field select {
+  width: 100%;
+  padding: 10px;
+  border: #ccc 1px solid;
+  border-radius: 5px;
+}
+
+.form-field input:focus, .form-field select:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+form .flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form button[type="submit"] {
+  background-color: #646cff;
+  color: #fff;
+  flex: 1;
+}
+
+form button[type="submit"]:hover {
+  background-color: #535bf2;
+}
+
+form button[type="button"] {
+  background-color: #ccc;
+  color: #000;
+  flex: 0.3;
+  flex-grow: 1;
+}
+
+form small{
+  font-size: 0.7em;
+  display: block;
+}
+
+form .footer {
+  margin-top: 20px;
 }
